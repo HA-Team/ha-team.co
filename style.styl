@@ -18,7 +18,8 @@ $animation-duration = 10s
       filter: invert(0)
     100%
       filter: invert(1)
-// Reset browser basic style
+
+// Reset browser basic styling
 a, p
   text-decoration: none
   color: $text-color
@@ -27,8 +28,7 @@ html
 *, *:before, *:after
   box-sizing: inherit
 
-// General style
-
+// Main style
 body
   background-color: $background-color
   font-family: 'Open Sans', sans-serif
@@ -42,7 +42,6 @@ body
   animation: background-color $animation-duration cubic-bezier(0.77,-0.63, 0.19, 1.43) $animation-delay infinite alternate
   .primary-color
     color: $primary-color
-
   .logo-color
     color: $primary-color
   img
@@ -58,4 +57,4 @@ body
     display: flex
     justify-content: space-between
     .envelope
-      filter: invert(100%)
+      filter: invert(1)

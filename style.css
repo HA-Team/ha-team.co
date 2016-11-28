@@ -47,7 +47,7 @@ body footer {
   justify-content: space-between;
 }
 body footer .envelope {
-  filter: invert(100%);
+  filter: invert(1);
 }
 @-moz-keyframes background-color {
   0% {
