@@ -1,0 +1,108 @@
+a,
+p {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  background-color: #3b0357;
+  font-family: 'Open Sans', sans-serif;
+  height: 98vh;
+  width: 100vw;
+  padding: 1vh;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  animation: background-color 10s cubic-bezier(0.77, -0.63, 0.19, 1.43) 0s infinite alternate;
+}
+body .primary-color {
+  color: #f0532d;
+}
+body .logo-color {
+  color: #f0532d;
+}
+body img {
+  max-width: 100%;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+}
+body main {
+  animation: text-color 10s cubic-bezier(0.77, -0.63, 0.19, 1.43) 0s infinite alternate;
+}
+body main #banner {
+  text-align: center;
+}
+body footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+body footer .envelope {
+  filter: invert(100%);
+}
+@-moz-keyframes background-color {
+  0% {
+    background-color: #3b0357;
+  }
+  100% {
+    background-color: #ff1493;
+  }
+}
+@-webkit-keyframes background-color {
+  0% {
+    background-color: #3b0357;
+  }
+  100% {
+    background-color: #ff1493;
+  }
+}
+@-o-keyframes background-color {
+  0% {
+    background-color: #3b0357;
+  }
+  100% {
+    background-color: #ff1493;
+  }
+}
+@keyframes background-color {
+  0% {
+    background-color: #3b0357;
+  }
+  100% {
+    background-color: #ff1493;
+  }
+}
+@-moz-keyframes text-color {
+  0% {
+    filter: invert(0);
+  }
+  100% {
+    filter: invert(1);
+  }
+}
+@-webkit-keyframes text-color {
+  0% {
+    filter: invert(0);
+  }
+  100% {
+    filter: invert(1);
+  }
+}
+@-o-keyframes text-color {
+  0% {
+    filter: invert(0);
+  }
+  100% {
+    filter: invert(1);
+  }
+}
+@keyframes text-color {
+  0% {
+    filter: invert(0);
+  }
+  100% {
+    filter: invert(1);
+  }
+}

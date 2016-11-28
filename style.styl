@@ -1,0 +1,57 @@
+// Variables
+$text-color = white
+$primary-color = #f0532d //rgb(240, 83, 45)
+$background-color = rgb(59,3,87)
+$dot-size = 10px
+$animation-delay = 0s
+$animation-duration = 10s
+
+// Animations
+@keyframes background-color
+    0%
+      background-color: $background-color
+    100%
+      background-color: deeppink//#BFB80F
+
+@keyframes text-color
+    0%
+      filter: invert(0)
+    100%
+      filter: invert(1)
+// Reset browser basic style
+a, p
+  text-decoration: none
+  color: $text-color
+
+// General style
+body
+  background-color: $background-color
+  font-family: 'Open Sans', sans-serif
+  height: 98vh
+  width: 100vw
+  padding: 1vh
+  margin: 0
+  display: flex
+  flex-flow column
+  justify-content: space-between
+  animation: background-color $animation-duration cubic-bezier(0.77,-0.63, 0.19, 1.43) $animation-delay infinite alternate
+  .primary-color
+    color: $primary-color
+
+  .logo-color
+    color: $primary-color
+  img
+    max-width: 100%
+  header
+    display: flex
+    justify-content: space-between;
+  main
+    animation: text-color $animation-duration cubic-bezier(0.77,-0.63, 0.19, 1.43) $animation-delay infinite alternate
+    #banner
+      text-align: center
+  footer
+    display: flex
+    justify-content: space-between
+    margin-bottom: 6px
+    .envelope
+      filter: invert(100%)
