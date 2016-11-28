@@ -3,10 +3,18 @@ p {
   text-decoration: none;
   color: #fff;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   background-color: #3b0357;
   font-family: 'Open Sans', sans-serif;
-  height: 98vh;
+  height: 100vh;
   width: 100vw;
   padding: 1vh;
   margin: 0;
@@ -37,7 +45,6 @@ body main #banner {
 body footer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 6px;
 }
 body footer .envelope {
   filter: invert(100%);
