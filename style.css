@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  animation: background-color 10s cubic-bezier(0.77, -0.63, 0.19, 1.43) 0s infinite alternate;
+  animation: background-color 10s cubic-bezier(1, 0.1, 0.68, 0.92) 0s infinite alternate;
 }
 body .primary-color {
   color: #f0532d;
@@ -37,17 +37,20 @@ body header {
   justify-content: space-between;
 }
 body main {
-  animation: text-color 10s cubic-bezier(0.77, -0.63, 0.19, 1.43) 0s infinite alternate;
+  animation: text-color 10s cubic-bezier(1, 0.1, 0.68, 0.92) 0s infinite alternate;
 }
 body main #banner {
   text-align: center;
 }
 body footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 body footer .envelope {
   filter: invert(1);
+}
+body footer img {
+  height: 2em;
 }
 @-moz-keyframes background-color {
   0% {

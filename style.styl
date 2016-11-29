@@ -5,6 +5,7 @@ $background-color = rgb(59,3,87)
 $dot-size = 10px
 $animation-delay = 0s
 $animation-duration = 10s
+$animation-timing-function = cubic-bezier(1, 0.1, 0.68, 0.92)
 
 // Animations
 @keyframes background-color
@@ -39,7 +40,7 @@ body
   display: flex
   flex-flow column
   justify-content: space-between
-  animation: background-color $animation-duration cubic-bezier(0.77,-0.63, 0.19, 1.43) $animation-delay infinite alternate
+  animation: background-color $animation-duration $animation-timing-function $animation-delay infinite alternate
   .primary-color
     color: $primary-color
   .logo-color
@@ -50,11 +51,13 @@ body
     display: flex
     justify-content: space-between;
   main
-    animation: text-color $animation-duration cubic-bezier(0.77,-0.63, 0.19, 1.43) $animation-delay infinite alternate
+    animation: text-color $animation-duration $animation-timing-function $animation-delay infinite alternate
     #banner
       text-align: center
   footer
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     .envelope
       filter: invert(1)
+    img
+      height: 2em
