@@ -45,6 +45,7 @@ body main .banner p {
 body footer {
   display: flex;
   justify-content: space-around;
+  flex-flow: row-reverse;
 }
 body footer .envelope {
   animation: text-color 10s cubic-bezier(1, 0.1, 0.68, 0.92) 0s infinite alternate;
