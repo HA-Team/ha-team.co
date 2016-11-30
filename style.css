@@ -15,7 +15,6 @@ body {
   background-color: #3b0357;
   font-family: 'Exo 2', sans-serif;
   height: 100vh;
-  width: 100vw;
   padding: 1vh;
   margin: 0;
   display: flex;
@@ -24,9 +23,6 @@ body {
   animation: background-color 10s cubic-bezier(1, 0.1, 0.68, 0.92) 0s infinite alternate;
 }
 body .primary-color {
-  color: #f0532d;
-}
-body .logo-color {
   color: #f0532d;
 }
 body img {
