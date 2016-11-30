@@ -35,18 +35,23 @@ body header {
 body main {
   animation: text-color 10s cubic-bezier(1, 0.1, 0.68, 0.92) 0s infinite alternate;
 }
-body main #banner {
+body main .banner {
   text-align: center;
 }
-body main #banner p {
+body main .banner p {
   margin: 0.5em;
+  font-size: calc(3vw + 3vh);
 }
 body footer {
   display: flex;
   justify-content: space-around;
 }
 body footer .envelope {
+  animation: text-color 10s cubic-bezier(1, 0.1, 0.68, 0.92) 0s infinite alternate;
+}
+body footer .envelope img {
   filter: invert(1);
+  padding: 0.05em;
 }
 body footer img {
   height: 2em;

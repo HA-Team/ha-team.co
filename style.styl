@@ -2,7 +2,7 @@
 $text-color = white
 $primary-color = #f0532d //rgb(240, 83, 45)
 $background-color = rgb(59,3,87)
-$dot-size = 10px
+$background-color-to = deeppink
 $animation-delay = 0s
 $animation-duration = 10s
 $animation-timing-function = cubic-bezier(1, 0.1, 0.68, 0.92)
@@ -12,13 +12,16 @@ $animation-timing-function = cubic-bezier(1, 0.1, 0.68, 0.92)
     0%
       background-color: $background-color
     100%
-      background-color: deeppink//#BFB80F
+      background-color: $background-color-to
 
 @keyframes text-color
     0%
       filter: invert(0)
     100%
       filter: invert(1)
+
+animate(animation)
+  animation: animation $animation-duration $animation-timing-function $animation-delay infinite alternate
 
 // Reset browser basic styling
 a, p
@@ -39,7 +42,7 @@ body
   display: flex
   flex-flow column
   justify-content: space-between
-  animation: background-color $animation-duration $animation-timing-function $animation-delay infinite alternate
+  animate(background-color)
   .primary-color
     color: $primary-color
   img
@@ -48,15 +51,19 @@ body
     display: flex
     justify-content: space-between;
   main
-    animation: text-color $animation-duration $animation-timing-function $animation-delay infinite alternate
-    #banner
+    animate(text-color)
+    .banner
       text-align: center
       p
         margin: 0.5em
+        font-size: calc(3vw + 3vh)
   footer
     display: flex
     justify-content: space-around
     .envelope
-      filter: invert(1)
+      animate(text-color)
+      img
+        filter: invert(1)
+        padding: 0.05em
     img
       height: 2em
