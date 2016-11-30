@@ -38,6 +38,9 @@ body main {
 body main #banner {
   text-align: center;
 }
+body main #banner p {
+  margin: 0.5em;
+}
 body footer {
   display: flex;
   justify-content: space-around;
